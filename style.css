@@ -6,6 +6,9 @@ body {
     color: white;
 }
 
+.mobile-menu {
+    display: none;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -18,8 +21,8 @@ a:hover {
     transition: 0.5s;
 }
 header {
-    margin-left: 104px;
-    margin-right: 105px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-top: 53px;
 }
 
@@ -67,6 +70,10 @@ main {
     margin-left: auto;
     margin-right: auto;
     font-weight: 100;
+}
+
+.main-earth img {
+   max-width: 100%;
 }
 .main-overview {
     display:flex;
@@ -143,4 +150,66 @@ footer p {
     width: 260px;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 1280px) {
+    .main-overview {
+        display: block;
+        text-align: center;
+    }
+    .main-overview img {
+        margin: 0;
+    }
+    .main-overview-left {
+        margin: 0;
+    }
+    .main-overview-left-att-1 {
+        justify-content: center;
+        text-align: center;
+    }
+    .main-overview-left-att-2 {
+        width: 90%;
+        max-width: 90%;
+        margin:auto;
+        margin-top: 3vh;
+    }
+    footer {
+        margin-top: auto;
+    }
+    footer img {
+        width: 30vw;
+    }
+}
+
+@media (orientation: portrait) {
+    .header-center, .header-right {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    #ico-menu {
+        width: 6vw;
+    }
+    #logo-spacex {
+        width: 30vw;
+
+    }
+    .main-overview h3 {
+        font-size: 2vw;
+    }
+    .main-earth div {
+        font-size: 4vw;
+    }
+    .main-earth #text {
+        width: 50vw;
+    }
+    .main-overview p {
+        font-size: 3vw;
+    }
+    #contact-us {
+        width: 50vw;
+        font-size: 4vw;
+        margin-top: 3vh;
+    }
 }
